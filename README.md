@@ -20,8 +20,8 @@ Folder             | Description
 
 ## Contributors List and Summary
 
-SF ID |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
--------|---------|----------------|----------------|---------------|-------------|--------------
+SF ID    |  Name            |    Features         | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
+---------|------------------|----------------------|----------------|---------------|-------------|--------------
 `256174` | `Adithya Vamsi`  | Feature A, B etc    | X No     | X No   |X No   |X No     
 
 ## Challenges Faced and How Was It Overcome
