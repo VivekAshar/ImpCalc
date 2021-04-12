@@ -1,10 +1,5 @@
-# Impedance Calculator
-
-### This is a tool that calculates impedance for series and parallel connection for resistors, inductors and capacitors....
-* Add a brief discription about the project
-* Add the information about extra folders or files added
-
-# SDLC Activity Based Learning
+# SDLC Activity Based Learning: Impedance Calculator
+## This is a tool that calculates impedance for series and parallel connection for resistors, inductors and capacitors....
 
 Visit [Pages for Report -optional](using github.io option)
 
@@ -15,18 +10,19 @@ Build | Code Quality | Unity | [Git Inspector](using github.io option)
 
 ## Folder Structure
 Folder             | Description
--------------------| -----------------------------------------
+-------------------| -----------------------------------------------
 `1_Requirements`   | Documents detailing requirements and research
-`2_Design`         | Documents specifying design details
+`2_Architecture`   | Documents specifying design details
 `3_Implementation` | All code and documentation
 `4_Test_plan`      | Documents with test plans and procedures
+`6_ImagesAndVideos`| Documents with test plans and procedures
+`7_Other`          | Documents with test plans and procedures
 
 ## Contributors List and Summary
 
-PS No. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
+SF ID |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
 -------|---------|----------------|----------------|---------------|-------------|--------------
-`ABC` | 12345678  | Feature A, B etc    | X No     | X No   |X No   |X No     
-`DEF` | 12345678  | Feature C, D etc    | X No     | X No   |X No   |X No     
+`256174` | `Adithya Vamsi`  | Feature A, B etc    | X No     | X No   |X No   |X No     
 
 ## Challenges Faced and How Was It Overcome
 
