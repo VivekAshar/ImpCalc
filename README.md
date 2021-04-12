@@ -15,8 +15,8 @@ Folder             | Description
 `2_Architecture`   | Documents specifying design details
 `3_Implementation` | All code and documentation
 `4_Test_plan`      | Documents with test plans and procedures
-`6_ImagesAndVideos`| Documents with test plans and procedures
-`7_Other`          | Documents with test plans and procedures
+`6_ImagesAndVideos`| Video of the project
+`7_Other`          | Other Documents and add-ons
 
 ## Contributors List and Summary
 
