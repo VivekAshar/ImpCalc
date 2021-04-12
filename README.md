@@ -1,6 +1,5 @@
 # SDLC Activity Based Learning: Impedance Calculator
-## This is a tool that calculates impedance for series and parallel connection for resistors, inductors and capacitors....
-
+![Banner](https://github.com/ar4240/ImpCalc/blob/main/1_Requirements/banner.jpg)
 Visit [Pages for Report -optional](using github.io option)
 
 Build | Code Quality | Unity | [Git Inspector](using github.io option)
@@ -10,7 +9,7 @@ Build | Code Quality | Unity | [Git Inspector](using github.io option)
 
 ## Folder Structure
 Folder             | Description
--------------------| -----------------------------------------------
+-------------------| ----------------------------------------------- 
 `1_Requirements`   | Documents detailing requirements and research
 `2_Architecture`   | Documents specifying design details
 `3_Implementation` | All code and documentation
@@ -19,11 +18,10 @@ Folder             | Description
 `7_Other`          | Other Documents and add-ons
 
 ## Contributors List and Summary
-
-SF ID    |       Name       |    Features         | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
----------|------------------|---------------------|----------------|---------------|-------------|--------------
-`256174` | `Adithya Vamsi`  | Feature A, B etc    | X No     | X No   |X No   |X No     
-
+SF Id. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
+-------|---------|----------------|----------------|---------------|-------------|--------------
+`256174` | Adithya Vamsi  | Feature A, B etc    | X No     | X No   |X No   |X No     
+ 
 ## Challenges Faced and How Was It Overcome
 
 1. ABC
