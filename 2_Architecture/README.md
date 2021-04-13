@@ -2,9 +2,10 @@
 
 ## High Level Design 
 
-### UML Use Case Diagram
+### UML Architectural Diagram
 --- TBD Structural and Behavioural Diagram
 ![HighLevelStructuralDiagram](Link to Pic)
+### UML Use Case Diagram
 ![HighLevelBehaviouralDiagram](https://github.com/ar4240/ImpCalc/blob/main/2_Architecture/behavior%20Diagrams/USECASE.jpg)
 
 ## Low Level Design 
