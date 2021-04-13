@@ -5,7 +5,7 @@
 ### UML Use Case Diagram
 --- TBD Structural and Behavioural Diagram
 ![HighLevelStructuralDiagram](Link to Pic)
-![HighLevelBehaviouralDiagram]()
+![HighLevelBehaviouralDiagram](https://github.com/ar4240/ImpCalc/blob/main/2_Architecture/behavior%20Diagrams/USECASE.jpg)
 
 ## Low Level Design 
 
