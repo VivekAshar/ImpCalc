@@ -14,5 +14,8 @@
 ![LowLevelStructuralDiagram](Link to Pic)
 
 ### UML Behavioural Use Case Diagram
+![LowLevelBehaviouralDiagram](https://github.com/ar4240/ImpCalc/blob/main/2_Architecture/behavioural%20Diagrams/Sequence_LL.jpg)
+#### With Respect to the specific feature: Resonant Frequency
+
 ![LowLevelBehaviouralDiagram](https://github.com/ar4240/ImpCalc/blob/main/2_Architecture/behavioural%20Diagrams/USECASE_LL.JPG)
 #### With Respect to the specific feature: RLC Series
