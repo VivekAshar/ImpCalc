@@ -43,37 +43,27 @@ Tools: MS Excel, MS word or Similar
 
 **Using a menu driven program that calculates impedance according to the needs.**
 
-# Detail requirements
-## High Level Requirements:
---- TBD in Tabular Format 
--- ID | Description | Status (Implemented/Future)
 
-
-##  Low level Requirements:
---- TBD in Tabular Format 
--- ID | Description | Status (Implemented/Future)
 # Detail requirements
 ## High Level Requirements: 
 | ID | Description | Status | 
 | ----- | ----- | ---------|
-| HR01 | User shall be able to add new patient record | TBD-S1 | 
-| HR02 | User shall be able to read a patient record  | TBD-S1 |
-| HR03 | User shall be able to update a patient record | TBD-S1 |
-| HR04 | User shall be able to delete a patient record | TBD-S1 |
-| HR05 | User shall be able to save records in a file | TBD-S1 |
-| HR06 | User shall be able to read data from a file | TBD-S1 |
-| HR07 | Data should not be lost in case of faliure |FUTURE |
-| HR08 | Data should always be stored when closing the system | TBD-S1 |
+| HR01 | User shall select an option from the main menu(R/L/c/RLC) | Implemented | 
+| HR02 | User shall select an option from the sub menu(Series/Parallel)  | Implemented |
+| HR03 | User have to enter the required values | Implemented |
+| HR04 | The program must throw errors if any uncertainities | Implemented |
+| HR05 | User can copy the old result | Future |
+
 ##  Low level Requirements:
- 
-| ID | Description | HLR ID | Status (Implemented/Future) |
-| ------ | --------- | ------ | ----- |
-| LR01 | New record shall be added by providing all the asked information and the id should be unique or else patient record should not be accepted. | HR01 | TBD-S1 |
-| LR02 | Reading patient data should be possible in 2 ways, first being by searching by id of a patient and second by printing all the records available | HR02 | TBD-S1 |
-| LR03 | While reading all the records, only 10 records per page should be visible and should add 10 more if user wants to see more | HR02 | FUTURE |
-| LR04 | If user searches for an invalid ID "No Record Found" message should be displayed | HR02 | TBD-S1 |
-| LR05 | User need to search by id for the pateint record to be updated, if no such record is available then "No Record Found" Message should be displayed | HR03 | TBD-S1 |
-| LR06 | User need to search by id for the pateint record to be deleted, if no such record is available then "No Record Found" Message should be displayed | HR04 | TBD-S1 |
-| LR05 | User shall be able to save the files, if file already exists then it should append to file and should not overwrite it and if file does not exists then it should create a new file | HR05 | TBD-S1 |
-| LR06 | If opening the file fails, then the system shloud prompt the message "Unable to access file" and should not end the program execution | HR05, HR06, HR07, HR08 | TBD-S1 |
-| LR07 | When user Log off the system, message shall be prompted asking the user to save new records to file before exiting or not | HR08 | TBD-S1 |
+
+|ID  | Description | HLR-ID | Status (Implemented/Future)|
+|----|-------------|--------|----------------------------|
+|LR01| User has to enter the type of impedance(R/L/C/RLC) | HR01 | Implemented |
+|LR02| Throw an error if the choice is out of bound | HR01 | Implemented |
+|LR03| User can calculate the resonant frequency if required from the main menu | HR01 | Implemented |
+|LR04| For the selection in LR01, user has to choose the combination of impedance | HR02 | Implemented |
+|LR05| Throw an error if the choice is out of bound | HR02 | Implemented |
+|LR06| User has to input the number of passive components | HR03 | Implemented |
+|LR07| User has to input the absolute value of each component | HR03 | Implemented |
+|LR08| Throw an error if any absurd value is detected | HR04 | Implemented |
+|LR09| User can copy the old inputs & output | HR05 | Future | 
