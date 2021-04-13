@@ -15,4 +15,4 @@
 
 ### UML Behavioural Use Case Diagram
 ![LowLevelBehaviouralDiagram](https://github.com/ar4240/ImpCalc/blob/main/2_Architecture/behavior%20Diagrams/USECASE_LL.JPG)
-#### With Respect to RLC specific feature
+#### With Respect to the specific feature: RLC Series
