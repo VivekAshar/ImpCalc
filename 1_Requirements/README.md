@@ -10,7 +10,7 @@ Tools: MS Excel, MS word or Similar
  --- TBD 
 
 ## Research
-![Description](Link to Pic)
+![Description](https://github.com/ar4240/ImpCalc/blob/main/1_Requirements/SWOT.jpg)
 -- Content 
 ## Cost and Features
 ![Description](Link to Pic)
