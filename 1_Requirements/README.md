@@ -2,6 +2,7 @@
 # Requirements
 
 ## Introduction
+![R_L_C](https://github.com/ar4240/ImpCalc/blob/main/1_Requirements/R_L_C.png)
 
 * Secanrio 1: The problem arises from senior secondary, where students in physics would have faced a difficulty in checking the correctness and accuracy of the solution while solving combination of resistances and as days passed people would've found the same problem in calculation of combination in capacitances and inductance. Then once entering into colleges and universities, the problem gets multiplied & now with a combination of all the three passive components. Students would solve and practice, but always had a fear being unable to verify their solution.
 
@@ -25,7 +26,6 @@ An inductor is a two terminal device used to store electrical energy in a magnet
 
 #### RLC:
 RLC circuits have many applications as oscillator circuits. Radio receivers and television sets use them for tuning to select a narrow frequency range from ambient radio waves. In this role, the circuit is often referred to as a tuned circuit.
-
 
 ## Cost and Features
 -- Content 
