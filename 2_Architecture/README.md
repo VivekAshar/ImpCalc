@@ -15,7 +15,7 @@
 
 ### UML Structural Diagram
 #### UML Component Diagram 
-![LowLevelStructuralDiagram](https://github.com/ar4240/ImpCalc/blob/main/2_Architecture/structural%20Diagrams/Component_LL.jpg)
+![LowLevelStructuralDiagram](https://github.com/ar4240/ImpCalc/blob/main/2_Architecture/structural%20Diagrams/Component_LL.JPG)
 
 ### UML Behavioural Use Case Diagram
 #### With Respect to the specific feature: Resonant Frequency
