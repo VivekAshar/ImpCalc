@@ -1,19 +1,39 @@
-Requirements
 
 # Requirements
+
 ## Introduction
- --- TBD 
+
+* Secanrio 1: The problem arises from senior secondary, where students in physics would have faced a difficulty in checking the correctness and accuracy of the solution while solving combination of resistances and as days passed people would've found the same problem in calculation of combination in capacitances and inductance. Then once entering into colleges and universities, the problem gets multiplied & now with a combination of all the three passive components. Students would solve and practice, but always had a fear being unable to verify their solution.
+
+* Secanrio 2: Apart from students, teachers and faculties from schools and colleges would also face the problem while framing the answer key for the same kind of questions and would rather mark an approximated value for the same and hence a chance of discrepancy and might cause a rework.
+
+* Scenario 3: Manufacturers and Engineers in R&D can also have a delay in the work and a chance of error during manual calculation when t comes to extremely complex and large valued problem.
+
+* The Solution: This Impedance calculator is developed using multiple programming concepts of C to aid in the above mentioned scenarios in cross-referring their manually calculated answers and speed up the operation with a greater accuracy for the latter case..
 
 ## Research
-![Description](Link to Pic)
--- Content 
+In the physics world and in the electronics industry, these resistors, capacitors and inductors collectively framed as a part passive elements play an pivot role.The passive components are those which are incapable of controlling current by means of another electrical signal.
+
+#### Resistors:
+A resistor is a two-terminal passive component that is used to resist the electric current in an electronic component. Resistors generally are used to reduce the current flow, signal levels, and to divide voltage. Resistors have an irreplaceable place in the electrical and electronic circuits. There are several types of resistors used in various type of components. They are high-power resistors, fixed resistors, variable resistors, three terminal variable resistors. Resistors are placed within integrated circuits.
+
+#### Capacitor:
+A capacitor is a component that has the ability or capacity be store the electric charge in it. The charge is stored in the form of energy. From very small capacitor that is bead size capacitor to the very large capacitor, all store energy. This effect of storing the electric charge is known as the capacitance. There are various types of capacitors present in the market. Some of the types of the capacitor are the dielectric material, voltage-dependent capacitors, frequency-dependent capacitors.
+
+#### Inductor:
+An inductor is a two terminal device used to store electrical energy in a magnetic field when electric current pass through it. An inductor consists of an electric conductor, such as a wire, that is wound into a coil. The inductor is also known as choke, that is just a coil of wire. It is designed to get a stronger magnetic field which we are not able to get from a simple coil of wire.
+
+#### RLC:
+RLC circuits have many applications as oscillator circuits. Radio receivers and television sets use them for tuning to select a narrow frequency range from ambient radio waves. In this role, the circuit is often referred to as a tuned circuit.
+
+
 ## Cost and Features
-![Description](Link to Pic)
 -- Content 
+
 ## Defining Our System
-    -- TBD
+![SysDiag](https://github.com/ar4240/ImpCalc/blob/main/1_Requirements/SYS_DIAG.png)
 ## SWOT ANALYSIS
-![SWOT-Sample](https://github.com/ar4240/ImpCalc/blob/main/1_Requirements/SWOT.jpg)
+![SWOT](https://github.com/ar4240/ImpCalc/blob/main/1_Requirements/SWOT.jpg)
 
 # 4W&#39;s and 1&#39;H
 
