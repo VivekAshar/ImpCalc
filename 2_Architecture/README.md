@@ -14,8 +14,8 @@
 ## Low Level Design (FeaturesLevel)
 
 ### UML Structural Diagram
---- TBD Structural Diagram
-![LowLevelStructuralDiagram](Link to Pic)
+#### UML Component Diagram 
+![LowLevelStructuralDiagram](https://github.com/ar4240/ImpCalc/blob/main/2_Architecture/structural%20Diagrams/Component_LL.jpg)
 
 ### UML Behavioural Use Case Diagram
 #### With Respect to the specific feature: Resonant Frequency
