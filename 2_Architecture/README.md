@@ -3,8 +3,8 @@
 ## High Level Design 
 
 ### UML Structural Diagram
---- TBD Structural and Diagram
-![HighLevelStructuralDiagram](Link to Pic)
+#### UML Architectural Diagram
+![HighLevelStructuralDiagram](https://github.com/ar4240/ImpCalc/blob/main/2_Architecture/structural%20Diagrams/architectural_HL.png)
 
 ### UML Behavioural Use Case Diagram
 ![HighLevelBehaviouralDiagram](https://github.com/ar4240/ImpCalc/blob/main/2_Architecture/behavioural%20Diagrams/USECASE_HL.jpg)
