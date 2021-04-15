@@ -3,7 +3,6 @@
 #define __impedance_h__
 
 #include<stdio.h>
-#include<math.h>
 //#include<conio.h>
 #include<stdlib.h>
 #define pi 3.142
@@ -13,5 +12,7 @@ float riscp(int n, float *a);
 float RLCS (float r,float l,float c,float f);
 float RLCP (float r,float l,float c,float f);
 float resfreq(float l,float c);
+double powr(float a,int t);
+double sqrrt(double n);
 
 #endif
