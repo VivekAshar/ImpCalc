@@ -198,7 +198,7 @@ int main()
     case 6://For EXITING THE APPLICATION
     {
         printf("\nThanks for using the application\nHope to see you soon, byeee!\n");
-        //exit(0);
+        break;
     }
     default://For Incorrect Inputs
     {
