@@ -1,15 +1,13 @@
-PROJ_NAME = imp_calc
+PROJ_NAME = vaccine_proj
 TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
-# All source code files
 SRC = src/file1.c\
 src/file2.c
 
-# All test source files
-TEST_SRC = test/test_calc.c\
-unity/unity.c
+COV_SRC = test.c
 
-COV_SRC = test_calc.c
+TEST_SRC = test/test.c\
+unity/unity.c
 
 INC_H = inc
 INC_T = unity
