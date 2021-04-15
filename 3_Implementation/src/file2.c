@@ -15,9 +15,9 @@ double sqrrt(double n)                           //To Calculate SquareRoot
 {
     double i, precision = 0.00001;
 
-    for (i = 1; i * i <= n; ++i); //Integer part
+    for (i = 1; i * i <= n; ++i);             //Integer part
 
-    for (--i; i * i < n; i += precision); //Fractional part
+    for (--i; i * i < n; i += precision);     //Fractional part
 
     return i;
 }
