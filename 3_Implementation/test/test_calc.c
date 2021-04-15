@@ -68,7 +68,7 @@ void test_rlcs(void)
 }
 void test_rlcp(void)
 {
-    TEST_ASSERT_EQUAL(0.0016,RLCP(10,10,10,10));
+    TEST_ASSERT_EQUAL(0.0016,RLCp(10,10,10,10));
 }
 void test_rf(void)
 {
