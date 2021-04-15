@@ -35,13 +35,14 @@ test:
 	./$(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
 
 coverage:
-	gcc -I $(INC_H) -I $(INC_T) $(TEST_SRC) $(SRC) -o $(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
-	./$(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
 	gcc -fprofile-arcs -ftest-coverage -I $(INC_H) -I $(INC_T) unity/unity.c test/test.c $(SRC) -o $(call FixPath, $(TEST_PROJ_NAME).$(EXEC))
 	$(call FixPath, ./$(TEST_PROJ_NAME).$(EXEC))
 	gcov -a $(COV_SRC)
+	$(RM) *.$(EXEC)
+	$(RM) *.gcda
+	$(RM) *.gcno
+	$(RM) *.c.gcov
 	
-
 cppcheck:
 	cppcheck --enable=all $(SRC) main.c
 debug:
@@ -49,8 +50,6 @@ debug:
 	gdb $(PROJ_NAME).$(EXEC)
 
 valgrind:
-	gcc -I $(INC_H) -I $(INC_T) $(TEST_SRC) $(SRC) -o $(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
-	./$(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
 	valgrind ./$(TEST_PROJ_NAME).$(EXEC)
 
 
