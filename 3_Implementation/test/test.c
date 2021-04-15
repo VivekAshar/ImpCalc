@@ -36,30 +36,37 @@ int main()
   return UNITY_END();
 }
 float a[5]={10,20,30,40,50};
+float b[1]={100};
 
 void test_rs(void)
 {
     TEST_ASSERT_EQUAL(150,riscp(5,a));
+    TEST_ASSERT_EQUAL(100,riscp(1,b));
 }
 void test_rp(void)
 {
     TEST_ASSERT_EQUAL(4.38,ripcs(5,a));
+    TEST_ASSERT_EQUAL(100,ripcs(1,b));
 }
 void test_cs(void)
 {
     TEST_ASSERT_EQUAL(4.38,ripcs(5,a));
+    TEST_ASSERT_EQUAL(100,ripcs(1,b));
 }
 void test_cp(void)
 {
     TEST_ASSERT_EQUAL(150,riscp(5,a));
+    TEST_ASSERT_EQUAL(100,riscp(1,b));
 }
 void test_is(void)
 {
     TEST_ASSERT_EQUAL(150,riscp(5,a));
+    TEST_ASSERT_EQUAL(100,riscp(1,b));
 }
 void test_ip(void)
 {
     TEST_ASSERT_EQUAL(4.38,ripcs(5,a));
+    TEST_ASSERT_EQUAL(100,ripcs(1,b));
 }
 void test_rlcs(void)
 {
