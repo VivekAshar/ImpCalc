@@ -7,11 +7,7 @@ float RLCS (float r,float l,float c,float f)
     float xl,xc,z;
     xl=(2*pi*f*l);
     xc=(1/(2*pi*f*c));
-    r=r*r;
-    float tmp=(xl-xc);
-    tmp=tmp*tmp;
-    z=(r+tmp)^(0.5);
-    //z=sqrt((pow(r,2)+pow((xl-xc),2)));
+    z=sqrt((pow(r,2)+pow((xl-xc),2)));
     return z;
 }
 
@@ -20,12 +16,7 @@ float RLCP (float r,float l,float c,float f)
     double xl,xc,z;
     xl=(2*pi*f*l);
     xc=(1/(2*pi*f*c));
-    r=(1/r);
-    r=r*r;
-    float tmp=((1/xl)-(1/xc));
-    tmp=tmp*tmp;
-    z=(r+tmp)^(0.5);
-    //z=sqrt((pow((1/r),2)+pow(((1/xl)-(1/xc)),2)));
+    z=sqrt((pow((1/r),2)+pow(((1/xl)-(1/xc)),2)));
     return (1/z);
 }
 
