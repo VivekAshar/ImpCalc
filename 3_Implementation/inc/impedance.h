@@ -3,6 +3,7 @@
 #define __impedance_h__
 
 #include<stdio.h>
+#include<math.h>
 //#include<conio.h>
 #include<stdlib.h>
 #define pi 3.142

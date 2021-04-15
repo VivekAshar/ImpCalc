@@ -1,5 +1,5 @@
 #include "impedance.h"
-
+#include<math.h>
 float ripcs(int n, float *a)
 {
  float temp,er;

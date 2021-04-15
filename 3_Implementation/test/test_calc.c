@@ -1,6 +1,6 @@
 #include"impedance.h"
 #include "unity.h"
-
+#include<math.h>
 #include<stdlib.h>
 /* Required by the unity test framework */
 void setUp(){}
