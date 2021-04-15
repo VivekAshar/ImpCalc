@@ -8,6 +8,15 @@ int main()
     printf("1. Resistor\n2. Capacitor\n3. Inductor\n4. RLC\n5. Resonant Frequency\n6. Exit\n");
     printf("Please enter the preferred option:\n");
     scanf("%d", &mmip);                 //get main-menu input
+
+    //Function Pointers are used to make code efficient(code re-use is leveraged) and more understandable (by using logical funcptr name)
+    float (*resistor_series)(int, float*) = &riscp;         
+    float (*resistor_parallel)(int,float*) = &ripcs;
+    float (*inductor_series)(int, float*) = &riscp;
+    float (*inductor_parallel)(int,float*) = &ripcs;
+    float (*capacitor_series)(int, float*) = &ripcs;
+    float (*capacitor_parallel)(int,float*) = &riscp;        
+    
     switch (mmip)
     {
     case 1://For RESISTANCE
@@ -31,7 +40,7 @@ int main()
                 printf("enter resistance %d(unit in ohms)\n ", (i + 1));
                 scanf("%f", &a[i]);
             }
-            float res = riscp(n, a);
+            float res = (*resistor_series)(n, a);
             printf("\nequivalent series resistance = %f\n", res);
             }
             break;
@@ -50,7 +59,7 @@ int main()
                 printf("enter resistance %d(unit in ohms)\n ", (i + 1));
                 scanf("%f", &a[i]);
             }
-            float res = ripcs(n, a);
+            float res = (*resistor_parallel)(n, a);
             printf("\nequivalent parallel resistance = %f\n", res);
             }
             break;
@@ -84,7 +93,7 @@ int main()
                 printf("enter Capacitance %d(unit in farad)\n ", (i + 1));
                 scanf("%f", &a[i]);
             }
-            float res = ripcs(n, a);
+            float res = (*capacitor_series)(n, a);
             printf("\nequivalent Series Capacitance = %f\n", res);
             }
             break;
@@ -103,7 +112,7 @@ int main()
                 printf("enter Capacitance %d(unit in farad)\n ", (i + 1));
                 scanf("%f", &a[i]);
             }
-            float res = riscp(n, a);
+            float res = (*capacitor_parallel)(n, a);
             printf("\nequivalent Parallel Capacitance = %f\n", res);
             }
             break;
@@ -137,7 +146,7 @@ int main()
                 printf("enter Inductance %d(unit in henry)\n ", (i + 1));
                 scanf("%f", &a[i]);
             }
-            float res = riscp(n, a);
+            float res = (*inductor_series)(n, a);
             printf("\nequivalent Series Indutance = %f\n", res);
             }
             break;
@@ -156,7 +165,7 @@ int main()
                 printf("enter Inductance %d(unit in henry)\n ", (i + 1));
                 scanf("%f", &a[i]);
             }
-            float res = ripcs(n, a);
+            float res = inductor_parallel(n, a);
             printf("\nequivalent Parallel Inductance = %f\n", res);
             }
             break;
