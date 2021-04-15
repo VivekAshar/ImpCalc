@@ -17,7 +17,7 @@ Folder             | Description
 ## Contributors List and Summary
 SF Id. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
 -------|---------|----------------|----------------|---------------|-------------|--------------
-`256174` |   Adithya Vamsi  | F_1a, F_1b, F_2a, F_2b, F_3a, F_3b, F_4a, F_4b, F_5    | 2     | 1   |9   |9     
+`256174` |   Adithya Vamsi  | F_1a, F_1b, F_2a, F_2b, F_3a, F_3b, F_4a, F_4b, F_5    | 1     | 1   |9   |9     
  
 | Feature Id | Feature |
 | -----------|---------|
