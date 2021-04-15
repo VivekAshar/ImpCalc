@@ -43,7 +43,7 @@ SF Id. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Case
 
 ## Learning Resources
 1. [SDLC Basics](https://www.javatpoint.com/software-development-life-cycle)
-2. [markdownBasics](https://guides.github.com/features/mastering-markdown/)
+2. [MarkdownBasics](https://guides.github.com/features/mastering-markdown/)
 3. [MakefileBasics](https://www.tutorialspoint.com/makefile/index.htm)
-4. [github workflow](https://docs.github.com/en/actions/learn-github-action)
+4. [Github Workflow](https://docs.github.com/en/actions/learn-github-action)
 
