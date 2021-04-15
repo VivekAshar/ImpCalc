@@ -1,5 +1,5 @@
 # SDLC Activity Based Learning: Impedance Calculator
-![Banner](https://github.com/ar4240/ImpCalc/blob/main/1_Requirements/banner.jpg)
+![Banner](https://github.com/ar4240/ImpCalc/blob/main/1_Requirements/logo1.jpeg)
 Visit [Pages for Report -optional](using github.io option)
 
 Build | Code Quality | Unity | [Git Inspector](using github.io option)
