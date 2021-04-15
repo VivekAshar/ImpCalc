@@ -2,7 +2,7 @@
 # Requirements
 
 ## Introduction
-![R_L_C](https://github.com/ar4240/ImpCalc/blob/main/1_Requirements/logo2.jpeg)
+![LOGO2](https://github.com/ar4240/ImpCalc/blob/main/1_Requirements/logo2.jpeg)
 
 * Secanrio 1: The problem arises from senior secondary, where students in physics would have faced a difficulty in checking the correctness and accuracy of the solution while solving combination of resistances and as days passed people would've found the same problem in calculation of combination in capacitances and inductance. Then once entering into colleges and universities, the problem gets multiplied & now with a combination of all the three passive components. Students would solve and practice, but always had a fear being unable to verify their solution.
 
@@ -23,6 +23,8 @@ A capacitor is a component that has the ability or capacity be store the electri
 
 #### Inductor:
 An inductor is a two terminal device used to store electrical energy in a magnetic field when electric current pass through it. An inductor consists of an electric conductor, such as a wire, that is wound into a coil. The inductor is also known as choke, that is just a coil of wire. It is designed to get a stronger magnetic field which we are not able to get from a simple coil of wire.
+
+![R_L_C](https://github.com/ar4240/ImpCalc/blob/main/1_Requirements/R_L_C.png)
 
 #### RLC:
 RLC circuits have many applications as oscillator circuits. Radio receivers and television sets use them for tuning to select a narrow frequency range from ambient radio waves. In this role, the circuit is often referred to as a tuned circuit.
