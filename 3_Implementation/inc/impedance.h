@@ -4,7 +4,6 @@
 
 #include<stdio.h>
 //#include<conio.h>
-#include<math.h>
 #include<stdlib.h>
 #define pi 3.142
 

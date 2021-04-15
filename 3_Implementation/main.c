@@ -1,5 +1,5 @@
 #include "impedance.h"
-
+#include<math.h>
 int main()
 {
 int mmip,smip;
