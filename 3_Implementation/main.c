@@ -51,6 +51,11 @@ int main()
             printf("\nequivalent parallel resistance = %f\n", res);
             break;
         }
+        default://For Incorrect Inputs
+        {
+            printf("Oops! You have entered an invalid choice, Kindly try again !!");
+            break;
+        }
         }
         break;
     }
@@ -95,6 +100,11 @@ int main()
             printf("\nequivalent Parallel Capacitance = %f\n", res);
             break;
         }
+        default://For Incorrect Inputs
+        {
+            printf("Oops! You have entered an invalid choice, Kindly try again !!");
+            break;
+        }        
         }
         break;
     }
@@ -139,6 +149,11 @@ int main()
             printf("\nequivalent Parallel Inductance = %f\n", res);
             break;
         }
+        default://For Incorrect Inputs
+        {
+            printf("Oops! You have entered an invalid choice, Kindly try again !!");
+            break;
+        }
         }
         break;
     }
@@ -179,6 +194,11 @@ int main()
             scanf("%lf", &f);
             float res = RLCP(r, l, c, f);
             printf("Equivalent Parallel Impedance:%f ohms\n", res);
+            break;
+        }
+        default://For Incorrect Inputs
+        {
+            printf("Oops! You have entered an invalid choice, Kindly try again !!");
             break;
         }
         }
