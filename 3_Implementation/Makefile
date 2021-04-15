@@ -71,7 +71,7 @@ coverageCheck:$(BUILD)
 	./$(TEST_OUTPUT)
 	gcov -a test_code.c
 valgrind:
-	valgrind ./Test_imp_calc.$(EXEC)
+	valgrind ./$(TEST_OUTPUT).$(EXEC)
 
 # Remove all the built files, invoke by `make clean`
 clean:
