@@ -19,7 +19,7 @@ endif
 # All source code files
 SRC = main.c\
 src/file1.c\
-src/file2c
+src/file2.c
 
 # All test source files
 TEST_SRC = src/file1.c\

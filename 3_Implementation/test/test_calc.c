@@ -40,7 +40,7 @@ float a[5]={10,20,30,40,50};
 
 void test_rs(void)
 {
-    TEST_ASSERT_EQUAL(20,riscp(5,a));
+    TEST_ASSERT_EQUAL(150,riscp(5,a));
 }
 void test_rp(void)
 {
@@ -52,11 +52,11 @@ void test_cs(void)
 }
 void test_cp(void)
 {
-    TEST_ASSERT_EQUAL(20,riscp(5,a));
+    TEST_ASSERT_EQUAL(150,riscp(5,a));
 }
 void test_is(void)
 {
-    TEST_ASSERT_EQUAL(20,riscp(5,a));
+    TEST_ASSERT_EQUAL(150,riscp(5,a));
 }
 void test_ip(void)
 {
@@ -68,7 +68,7 @@ void test_rlcs(void)
 }
 void test_rlcp(void)
 {
-    TEST_ASSERT_EQUAL(0.0016,RLCp(10,10,10,10));
+    TEST_ASSERT_EQUAL(0.0016,RLCP(10,10,10,10));
 }
 void test_rf(void)
 {

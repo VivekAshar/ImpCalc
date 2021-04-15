@@ -11,7 +11,7 @@
 float ripcs(int n, float *a);
 float riscp(int n, float *a);
 float RLCS (float r,float l,float c,float f);
-float RLCp (float r,float l,float c,float f);
+float RLCP (float r,float l,float c,float f);
 float resfreq(float l,float c);
 
 #endif

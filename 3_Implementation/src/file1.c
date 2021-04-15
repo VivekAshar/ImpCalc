@@ -6,7 +6,7 @@ float ripcs(int n, float *a)
  er=a[0];
  for(int i=1;i<n;i++)
  {
-     temp=(1/er)+((1/a[i]));        /* cast r2 to float  */
+     temp=(1/er)+((1/a[i]));        
      er=(1/temp);
  }
  return er;
