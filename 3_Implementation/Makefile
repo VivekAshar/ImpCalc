@@ -1,4 +1,4 @@
-PROJ_NAME = vaccine_proj
+PROJ_NAME = imp_calc
 TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
 SRC = src/file1.c\
@@ -38,13 +38,7 @@ coverage:
 	gcc -fprofile-arcs -ftest-coverage -I $(INC_H) -I $(INC_T) unity/unity.c test/test.c $(SRC) -o $(call FixPath, $(TEST_PROJ_NAME).$(EXEC))
 	$(call FixPath, ./$(TEST_PROJ_NAME).$(EXEC))
 	gcov -a $(COV_SRC)
-	$(RM) *.$(EXEC)
-	$(RM) *.gcda
-	$(RM) *.gcno
-	$(RM) *.c.gcov
-	$(RM) *.DAT
-	$(RM) test.c
-
+	
 
 cppcheck:
 	cppcheck --enable=all $(SRC) main.c
@@ -57,7 +51,6 @@ valgrind:
 
 
 clean:
-	$(RM) *.DAT
 	$(RM) *.$(EXEC)
 	$(RM) *.gcda
 	$(RM) *.gcno
