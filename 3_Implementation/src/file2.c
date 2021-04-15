@@ -43,7 +43,7 @@ float resfreq(float l,float c)
 {
     float f=0.0,s=0.0,result;
     s=l*c;
-    result=sqrt(s);
+    result=sqrrt(s);
     f=1/(2*pi*result);
     return f;
 }
