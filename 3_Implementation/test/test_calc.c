@@ -63,11 +63,11 @@ void test_ip(void)
 {
     TEST_ASSERT_EQUAL(4.38,ripcs(5,a));
 }
-void test_rcls(void)
+void test_rlcs(void)
 {
     TEST_ASSERT_EQUAL(628.3965,RLCS(10,10,10,10));
 }
-void test_rclp(void)
+void test_rlcp(void)
 {
     TEST_ASSERT_EQUAL(0.0016,RLCP(10,10,10,10));
 }
