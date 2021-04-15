@@ -3,6 +3,7 @@
 int main()
 {
     int mmip, smip;                     //mmip=main menu input & smip=sub menu input
+    typedef float f;
     printf("Welcome to Impedance Calculator\n");
     printf("MENU:\n");
     printf("1. Resistor\n2. Capacitor\n3. Inductor\n4. RLC\n5. Resonant Frequency\n6. Exit\n");
@@ -10,12 +11,12 @@ int main()
     scanf("%d", &mmip);                 //get main-menu input
 
     //Function Pointers are used to make code efficient(code re-use is leveraged) and more understandable (by using logical funcptr name)
-    float (*resistor_series)(int, float*) = &riscp;         
-    float (*resistor_parallel)(int,float*) = &ripcs;
-    float (*inductor_series)(int, float*) = &riscp;
-    float (*inductor_parallel)(int,float*) = &ripcs;
-    float (*capacitor_series)(int, float*) = &ripcs;
-    float (*capacitor_parallel)(int,float*) = &riscp;        
+    f (*resistor_series)(int, f*) = &riscp;         
+    f (*resistor_parallel)(int,f*) = &ripcs;
+    f (*inductor_series)(int, f*) = &riscp;
+    f (*inductor_parallel)(int,f*) = &ripcs;
+    f (*capacitor_series)(int, f*) = &ripcs;
+    f (*capacitor_parallel)(int,f*) = &riscp;        
     
     switch (mmip)
     {
@@ -34,13 +35,13 @@ int main()
             scanf("%d", &n);
             if(n==0){printf("Invalid Input!! Try Again\n");}
             else
-            {float a[n];                 /* Dynamic Array Declaration  */
+            {f a[n];                 /* Dynamic Array Declaration  */
             for (int i = 0; i < n; i++) // loop to get indviduval impedance
             {
                 printf("enter resistance %d(unit in ohms)\n ", (i + 1));
                 scanf("%f", &a[i]);
             }
-            float res = (*resistor_series)(n, a);
+            f res = (*resistor_series)(n, a);
             printf("\nequivalent series resistance = %f\n", res);
             }
             break;
@@ -53,13 +54,13 @@ int main()
             scanf("%d", &n);
             if(n==0){printf("Invalid Input!! Try Again\n");}
             else
-            {float a[n];                 /* Dynamic Array Declaration  */
+            {f a[n];                 /* Dynamic Array Declaration  */
             for (int i = 0; i < n; i++) // loop to get indviduval impedance
             {
                 printf("enter resistance %d(unit in ohms)\n ", (i + 1));
                 scanf("%f", &a[i]);
             }
-            float res = (*resistor_parallel)(n, a);
+            f res = (*resistor_parallel)(n, a);
             printf("\nequivalent parallel resistance = %f\n", res);
             }
             break;
@@ -87,13 +88,13 @@ int main()
             scanf("%d", &n);
             if(n==0){printf("Invalid Input!! Try Again\n");}
             else
-            {float a[n];                 /* Dynamic Array Declaration  */
+            {f a[n];                 /* Dynamic Array Declaration  */
             for (int i = 0; i < n; i++) // loop to get indviduval impedance
             {
                 printf("enter Capacitance %d(unit in farad)\n ", (i + 1));
                 scanf("%f", &a[i]);
             }
-            float res = (*capacitor_series)(n, a);
+            f res = (*capacitor_series)(n, a);
             printf("\nequivalent Series Capacitance = %f\n", res);
             }
             break;
@@ -106,13 +107,13 @@ int main()
             scanf("%d", &n);
             if(n==0){printf("Invalid Input!! Try Again\n");}
             else
-            {float a[n];                 /* Dynamic Array Declaration  */
+            {f a[n];                 /* Dynamic Array Declaration  */
             for (int i = 0; i < n; i++) // loop to get indviduval impedance
             {
                 printf("enter Capacitance %d(unit in farad)\n ", (i + 1));
                 scanf("%f", &a[i]);
             }
-            float res = (*capacitor_parallel)(n, a);
+            f res = (*capacitor_parallel)(n, a);
             printf("\nequivalent Parallel Capacitance = %f\n", res);
             }
             break;
@@ -140,13 +141,13 @@ int main()
             scanf("%d", &n);
             if(n==0){printf("Invalid Input!! Try Again\n");}
             else
-            {float a[n];                 /* Dynamic Array Declaration  */
+            {f a[n];                 /* Dynamic Array Declaration  */
             for (int i = 0; i < n; i++) // loop to get indviduval impedance
             {
                 printf("enter Inductance %d(unit in henry)\n ", (i + 1));
                 scanf("%f", &a[i]);
             }
-            float res = (*inductor_series)(n, a);
+            f res = (*inductor_series)(n, a);
             printf("\nequivalent Series Indutance = %f\n", res);
             }
             break;
@@ -159,13 +160,13 @@ int main()
             scanf("%d", &n);
             if(n==0){printf("Invalid Input!! Try Again\n");}
             else
-            {float a[n];                 /* Dynamic Array Declaration  */
+            {f a[n];                 /* Dynamic Array Declaration  */
             for (int i = 0; i < n; i++) // loop to get indviduval impedance
             {
                 printf("enter Inductance %d(unit in henry)\n ", (i + 1));
                 scanf("%f", &a[i]);
             }
-            float res = inductor_parallel(n, a);
+            f res = inductor_parallel(n, a);
             printf("\nequivalent Parallel Inductance = %f\n", res);
             }
             break;
@@ -188,7 +189,7 @@ int main()
         {
         case 1:
         {
-            double r, l, c, f;          //Inputs
+            double r, l, c, fq;          //Inputs
             printf("Enter the value of R(unit in ohm):\n");
             scanf("%lf", &r);
             printf("Enter the value of L(unit in henry):\n");
@@ -196,10 +197,10 @@ int main()
             printf("Enter the value of C(unit in farad):\n");
             scanf("%lf", &c);
             printf("Enter the value of f(unit in hertz):\n");
-            scanf("%lf", &f);
-            if (l!=0 && c!=0 && f!=0)   
+            scanf("%lf", &fq);
+            if (l!=0 && c!=0 && fq!=0)   
             {
-                float res = RLCS(r, l, c, f);
+                f res = RLCS(r, l, c, fq);
                 printf("Equivalent Series Impedance:%f ohms\n", res);
             }
             else
@@ -211,7 +212,7 @@ int main()
 
         case 2:
         {
-            double r, l, c, f;          //Inputs
+            double r, l, c, fq;          //Inputs
             printf("Enter the value of R(unit in ohm):\n");
             scanf("%lf", &r);
             printf("Enter the value of L(unit in henry):\n");
@@ -219,10 +220,10 @@ int main()
             printf("Enter the value of C(unit in farad):\n");
             scanf("%lf", &c);
             printf("Enter the value of f(unit in hertz):\n");
-            scanf("%lf", &f);
-            if (l!=0 && c!=0 && f!=0)   
+            scanf("%lf", &fq);
+            if (l!=0 && c!=0 && fq!=0)   
             {
-                float res = RLCP(r, l, c, f);
+                f res = RLCP(r, l, c, fq);
                 printf("Equivalent Parallel Impedance:%f ohms\n", res);
             }
             else
@@ -241,14 +242,14 @@ int main()
     }
     case 5://For RESONANT FREQUENCY
     {
-        float l, c;             //Inputs
+        f l, c;             //Inputs
         printf("Enter the value of L(unit in henry):\n");
         scanf("%f", &l);
         printf("Enter the value of C(unit in farad):\n");
         scanf("%f", &c);
         if(l!=0 && c!=0)
         {
-            float res = resfreq(l, c);
+            f res = resfreq(l, c);
             printf("Resonant Frequency: %f\n", res);
         }
         else
