@@ -37,7 +37,7 @@ int main()
   /* Close the Unity Test Framework */
   return UNITY_END();
 }
-int a[5]={10,20,30,40,50};
+float a[5]={10,20,30,40,50};
 
 void test_rs(void)
 {

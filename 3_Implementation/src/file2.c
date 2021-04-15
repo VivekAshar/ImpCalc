@@ -1,6 +1,6 @@
 #include "impedance.h"
-#include<math.h>
-#include<stdio.h>
+//#include<math.h>
+//#include<stdio.h>
 
 float RLCS (float r,float l,float c,float f)
 {
