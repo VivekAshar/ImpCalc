@@ -2,6 +2,11 @@
 #include "unity.h"
 
 #include<stdlib.h>
+/* Required by the unity test framework */
+void setUp(){}
+/* Required by the unity test framework */
+void tearDown(){}
+
 void test_rs(void);
 void test_rp(void);
 void test_cs(void);
@@ -11,12 +16,6 @@ void test_ip(void);
 void test_rlcs(void);
 void test_rlcp(void);
 void test_rf(void);
-
-
-/* Required by the unity test framework */
-void setUp(){}
-/* Required by the unity test framework */
-void tearDown(){}
 
 /* Start of the application test */
 int main()
