@@ -1,6 +1,4 @@
 #include "impedance.h"
-#include <math.h>
-//#include<stdio.h>
 
 double powr(float a, int t)                      //To Calculate Power
 {
@@ -24,27 +22,55 @@ double sqrrt(double n)                           //To Calculate SquareRoot
 
 float RLCS(float r, float l, float c, float f)     //To Calculate RLC Series Combination
 {
-    float xl, xc, z;
+    float xl, xc;
     xl = (2 * pi * f * l);
     xc = (1 / (2 * pi * f * c));
-    z = sqrrt((powr(r, 2) + powr((xl - xc), 2)));
-    return z;
+    if(!(xl==0 && xc==0))
+    {
+        float z = sqrrt((powr(r, 2) + powr((xl - xc), 2)));
+        return z;
+    }
+    else
+    {
+        return 0;
+    }
 }
 
 float RLCP(float r, float l, float c, float f)     //To Calculate RLC Parallel Combination
 {
-    double xl, xc, z;
+    double xl, xc;
     xl = (2 * pi * f * l);
     xc = (1 / (2 * pi * f * c));
-    z = sqrrt((powr((1 / r), 2) + powr(((1 / xl) - (1 / xc)), 2)));
-    return (1 / z);
+    if(!(xl==0 && xc==0))
+    {
+        double z = sqrrt((powr((1 / r), 2) + powr(((1 / xl) - (1 / xc)), 2)));
+        if(z!=0)
+        {
+            return (1 / z);
+        }
+        else
+        {
+            return 0;
+        }
+    }
+    else
+    {
+        return 0;
+    }
 }
 
 float resfreq(float l, float c)                     //To Calculate Resonant Frequency
 {
-    float f = 0.0, s = 0.0, result;
+    float s = 0.0, result;
     s = l * c;
     result = sqrrt(s);
-    f = 1 / (2 * pi * result);
-    return f;
+    if(result!=0)
+    {
+        float f = 1 / (2 * pi * result);
+        return f;
+    }
+    else
+    {
+        return 0;
+    }
 }
