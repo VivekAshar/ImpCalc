@@ -32,9 +32,19 @@ RLC circuits have many applications as oscillator circuits. Radio receivers and 
 ## Cost and Features
 * The utility is developed using open-source tools. 
 #### Features:
-* Works as CLI in both linux & Windows.
-* Can calculate Equivalent Resistance, Equivalent Capacitance, Equivalent Inducatance, Impedance and Resonant Frequency.
-* Not but no the least can calculate for both the combinations of series and parallel.
+* User intutive CLI with multiple menu's.
+* Works in both linux and windows.
+* Can calculate Series Combination for:
+    a. Equivalent Resistance
+    b. Equivalent Capacitance
+    c. Equivalent Inducatance
+    d. RLC Impedance 
+* Can calculate Parallel Combination for:
+    a. Equivalent Resistance
+    b. Equivalent Capacitance
+    c. Equivalent Inducatance
+    d. RLC Impedance 
+* Can calculate Resonant Frequency to help in tuning.
 
 
 ## Defining Our System
