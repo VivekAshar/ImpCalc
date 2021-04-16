@@ -29,7 +29,10 @@ int main()
         switch (smip)
         {
         case 1:
-        {
+        {/**
+         * @brief Series Resistance Calculation
+         * 
+         */
             int n; /*  number of resistors   */
             printf("enter number of Resistors\n");
             scanf("%d", &n);
@@ -54,7 +57,10 @@ int main()
         }
 
         case 2:
-        {
+        {/**
+         * @brief Parallel Resistance Calculation
+         * 
+         */
             int n; /*  number of resistors   */
             printf("enter number of Resistors\n");
             scanf("%d", &n);
@@ -94,7 +100,10 @@ int main()
         switch (smip)
         {
         case 1:
-        {
+        {/**
+         * @brief Series CAPACITANCE Calculation
+         * 
+         */
             int n; /*  number of resistors   */
             printf("enter number of Capacitors\n");
             scanf("%d", &n);
@@ -119,7 +128,10 @@ int main()
         }
 
         case 2:
-        {
+        {/**
+         * @brief Parallel CAPACITANCE Calculation
+         * 
+         */
             int n; /*  number of resistors   */
             printf("enter number of Capacitors\n");
             scanf("%d", &n);
@@ -159,7 +171,10 @@ int main()
         switch (smip)
         {
         case 1:
-        {
+        {/**
+         * @brief Series INDUCTANCE Calculation
+         * 
+         */
             int n; /*  number of resistors   */
             printf("enter number of Inductors\n");
             scanf("%d", &n);
@@ -184,7 +199,10 @@ int main()
         }
 
         case 2:
-        {
+        {/**
+         * @brief Parallel INDUCTANCE Calculation
+         * 
+         */
             int n; /*  number of resistors   */
             printf("enter number of Inductors\n");
             scanf("%d", &n);
@@ -224,7 +242,10 @@ int main()
         switch (smip)
         {
         case 1:
-        {
+        {/**
+         * @brief Series RLC Impedance Calculation
+         * 
+         */
             double r, l, c, fq; //Inputs
             printf("Enter the value of R(unit in ohm):\n");
             scanf("%lf", &r);
@@ -247,7 +268,10 @@ int main()
         }
 
         case 2:
-        {
+        {/**
+         * @brief Parallel RLC Impedance Calculation
+         * 
+         */
             double r, l, c, fq; //Inputs
             printf("Enter the value of R(unit in ohm):\n");
             scanf("%lf", &r);
