@@ -1,10 +1,10 @@
 #include "impedance.h"
 
-float ripcs(int n, float *a)                //Calculates R-Parallel Comination||I-Parallel Comination||C-Series Comination
+float ripcs(int n, float *a) //Calculates R-Parallel Comination||I-Parallel Comination||C-Series Comination
 {
     float er;
     er = a[0];
-    if(n==1)
+    if (n == 1)
     {
         return (er);
     }
@@ -17,12 +17,11 @@ float ripcs(int n, float *a)                //Calculates R-Parallel Comination||
         }
         return er;
     }
-    
 }
 
-float riscp(int n, float *a)                //Calculates R-Series Comination||I-Series Comination||C-Parallel Comination
+float riscp(int n, float *a) //Calculates R-Series Comination||I-Series Comination||C-Parallel Comination
 {
-    if(n==1)
+    if (n == 1)
     {
         return a[0];
     }

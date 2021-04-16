@@ -11,8 +11,8 @@
 #ifndef __impedance_h__
 #define __impedance_h__
 
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
 #define pi 3.142 // PI value is declared to be used throughout the program
 /**
  * @brief Structure to calculate resonant frequency
@@ -51,7 +51,7 @@ float riscp(int n, float *a);
  * @param f : Frequency
  * @return float : The final output is returned 
  */
-float RLCS (float r,float l,float c,float f);
+float RLCS(float r, float l, float c, float f);
 
 /**
  * @brief: Function to calculate parallel combination of RLC Circuit
@@ -62,7 +62,7 @@ float RLCS (float r,float l,float c,float f);
  * @param f : Frequency
  * @return float : The final output is returned 
  */
-float RLCP (float r,float l,float c,float f);
+float RLCP(float r, float l, float c, float f);
 
 /**
  * @brief : Function to calculate Resonant Frequency
@@ -79,7 +79,7 @@ float resfreq(struct resofreq a);
  * @param t : Power/Exponent
  * @return double : The final output is returned 
  */
-double powr(float a,int t);
+double powr(float a, int t);
 
 /**
  * @brief TO manually calculate the squareroot of a nymber
