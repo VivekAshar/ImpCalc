@@ -14,6 +14,15 @@
 #include<stdio.h>
 #include<stdlib.h>
 #define pi 3.142 // PI value is declared to be used throughout the program
+/**
+ * @brief Structure to calculate resonant frequency
+ * 
+ */
+struct resofreq
+{
+    float l; // Inductance
+    float c; //Capacitance
+};
 
 /**
  * @Function to calculate Resistance Inducatance Parallel and Capacitor Series shortened as ripcs
@@ -58,11 +67,10 @@ float RLCP (float r,float l,float c,float f);
 /**
  * @brief : Function to calculate Resonant Frequency
  * 
- * @param l : Inductance
- * @param c : Capacitance
- * @return float : The final output is returned 
+ * @param a : Structure which contains two variables for inductance and capacitance
+ * @return float : The final output is returned
  */
-float resfreq(float l,float c);
+float resfreq(struct resofreq a);
 
 /**
  * @brief To manually calculate the power of a number

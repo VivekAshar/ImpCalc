@@ -61,10 +61,10 @@ float RLCP(float r, float l, float c, float f)     //To Calculate RLC Parallel C
     }
 }
 
-float resfreq(float l, float c)                     //To Calculate Resonant Frequency
+float resfreq(struct resofreq a)                     //To Calculate Resonant Frequency
 {
     float s = 0.0, result;
-    s = l * c;
+    s = a.l * a.c;
     result = sqrrt(s);
     if(result!=0)
     {

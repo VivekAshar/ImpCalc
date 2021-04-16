@@ -242,14 +242,14 @@ int main()
     }
     case 5://For RESONANT FREQUENCY
     {
-        f l, c;             //Inputs
+        struct resofreq a;             //Inputs
         printf("Enter the value of L(unit in henry):\n");
-        scanf("%f", &l);
+        scanf("%f", &a.l);
         printf("Enter the value of C(unit in farad):\n");
-        scanf("%f", &c);
-        if(l!=0 && c!=0)
+        scanf("%f", &a.c);
+        if(a.l!=0 && a.c!=0)
         {
-            f res = resfreq(l, c);
+            f res = resfreq(a);
             printf("Resonant Frequency: %f\n", res);
         }
         else

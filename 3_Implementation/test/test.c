@@ -37,6 +37,8 @@ int main()
 }
 float a[5]={10,20,30,40,50};
 float b[1]={100};
+struct resofreq bb;
+
 
 void test_rs(void)
 {
@@ -78,5 +80,6 @@ void test_rlcp(void)
 }
 void test_rf(void)
 {
-    TEST_ASSERT_EQUAL(0.015913,resfreq(10,10));
+    bb.c=10;bb.l=10;
+    TEST_ASSERT_EQUAL(0.015913,resfreq(bb));
 }
