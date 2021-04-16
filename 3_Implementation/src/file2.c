@@ -2,8 +2,10 @@
 
 double powr(float a, int t)                      //To Calculate Power
 {
+    enum chkr {nil=0,sqr=2}chk;
+    chk=t;
     double ans = 0;
-    if (t == 2)
+    if (chk == 2)
     {
         ans = a * a;
     }
