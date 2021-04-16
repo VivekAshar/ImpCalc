@@ -30,9 +30,9 @@ An inductor is a two terminal device used to store electrical energy in a magnet
 RLC circuits have many applications as oscillator circuits. Radio receivers and television sets use them for tuning to select a narrow frequency range from ambient radio waves. In this role, the circuit is often referred to as a tuned circuit.
 
 ## Cost and Features
-* The utility is developed using open-source tools. 
+* The utility is developed using open-source tools and hence doesn't incur any cost. 
 #### Features:
-* User intutive CLI with multiple menu's.
+* User intuitive CLI with multiple menu's.
 * Works in both linux and windows.
 * Can calculate Series Combination for:
     a. Equivalent Resistance
